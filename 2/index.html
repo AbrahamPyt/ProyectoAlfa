@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Music App</title>
 </head>
 
@@ -18,15 +21,9 @@
           
             
         </div>
-        <div class="menu_song">
-            <li class="songItem">
-                <span>01</span>
-                <img src="img/1.jpg" alt="Alan">
-                <h5>
-                    On My Way
-                    <div class="subtitle">Alan Walker</div>
-                </h5>
-                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+        <div class="menu_song" id="track-list">
+            <!-- <li class="songItem">
+
             </li>
             <li class="songItem">
                 <span>02</span>
@@ -72,7 +69,7 @@
                     <div class="subtitle">Alan Walker</div>
                 </h5>
                     <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
-            </li>
+            </li> -->
         </div>
     </div>
 
@@ -112,98 +109,7 @@
                     <i id="right_scroll" class="bi bi-arrow-right-short"></i>
                 </div>
             </div>
-            <div class="pop_song">
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
-                        <!-- change All id  -->
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
-                <li class="songItem">
-                    <div class="img_play">
-                        <img src="img/1.jpg" alt="alan">
-                        <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
-                    </div>
-                    <h5>On My Way
-                        <br>
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                </li>
+            <div class="pop_song" id="otra-cosa">
             </div>
         </div>
         <div class="popular_artists">
@@ -285,6 +191,7 @@
         </div>
     </div>
 </header>
+<audio src="" id="audio" autoplay></audio>
     <script src="app.js"></script>
 </body>
 
